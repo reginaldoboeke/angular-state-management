@@ -1,0 +1,17 @@
+<header>
+  <section class="logo-section">
+    <h3>Angular State Management</h3>
+    <span>Folders quantity: <strong>{{ this.foldersQuantity }}</strong></span>
+  </section>
+
+  <section class="actions-section">
+    <form [formGroup]="this.form" (ngSubmit)="this.handleSubmit()">
+      <input type="text" name="folder_name" id="folder_name" placeholder="Enter a folder name"
+      formControlName="folder_name">
+
+      <button type="submit">
+        Add folder
+      </button>
+    </form>
+  </section>
+</header>
